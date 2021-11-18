@@ -9,8 +9,9 @@ To develop a tool to classify cells inside the tumours by using the single-cell 
  
 <img width="766" alt="CellClassification" src="https://user-images.githubusercontent.com/89971977/142504350-07cd9bf1-f2e5-4f0f-8e77-94c68c91a4d2.PNG">
  
+<p align="center">
 **Figure 1** Cell Classification
-
+</p>
 
 All icons used in this report are from [flaticon](https://www.flaticon.com/) 
 
