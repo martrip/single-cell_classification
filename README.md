@@ -24,10 +24,10 @@ All icons used in this report are from [flaticon](https://www.flaticon.com/)
 **Part 1: Data Conversion** <br>   
 RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
 
-**Part 2:** Data Exploration 
+**Part 2: Data Exploration** <br>
 Structures of dataset were investigated using 
 
-**Part 3:** Data Reduction 
+**Part 3: Data Reduction** <br>
 Original dataset is reduced to implementable dataset size, Figure 2. 
 Original dataset is reduced to 30% in a random fashion, is denoted as “Test Dataset”. It can be observed that the dataset is unbalanced. This means the amount of cell types are unbalanced in the original dataset. This dataset is used in the unsupervised learning model to generate clusters. This same dataset is used in the Supervised learning model as a Test Dataset (unseen dataset). 
 
@@ -39,22 +39,22 @@ Two datasets were generated, and they both are denoted as a “Train Dataset”,
 
 In a similar fashion, another “Train Dataset” is un-randomly selected from the original dataset and it is 10% of the original amount of data. The un-random dataset was selected based on the first order of data in the given file. 
 
-**Part 4:**  Unsupervised Machine Learning Model 
+**Part 4: Unsupervised Machine Learning Model** <br> 
 Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types to this plot. 
 The unsupervised model file name: “HierarchicalUnsupervised30Subset_20211028.ipynb” 
 
-**Part 5:**  Supervised Machine Learning Model 
+**Part 5: Supervised Machine Learning Model** <br> 
 Two sets of cell numbers were explored, 43 and 12 cells, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. 
 Additional supervised model was developed based on given dataset that its dimension has been reduced using a PCA method. 
 
 
-**Part 6:**  Model Interpretation 
+**Part 6: Model Interpretation** <br> 
 Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model. 
 
-## 4.	Results 
+## 4.	Results <br>
 For 12 classes, 96% prediction accuracy of cells were predicted and the prediction under a Macro F1 method shows 74%. 
 
-## 5.	Outlook 
+## 5.	Outlook <br>
 The model can be simplified by reduction of features. Only the most significant genes, based on the “Feature Importance”, output described earlier can be pre-selected and remain in the model. Those genes with less significant features can be excluded from the model. 
 
 
