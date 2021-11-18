@@ -10,7 +10,6 @@ To develop a tool to classify cells inside the tumours by using the single-cell 
 <img width="610" alt="CellClassification2" src="https://user-images.githubusercontent.com/89971977/142506633-8d75c533-2626-4aaf-b591-e5badd5889df.PNG">
  </p>
 
- 
 <p align="center">
 Figure 1Cell Classification
 </p>
@@ -28,7 +27,8 @@ RDS data (Adata format) is transformed to h5ad data format so that it can be tra
 **File needed:** convert_rds_to_h5Seurat.R
 
 **Part 2: Data Exploration** <br>
-Structures of dataset were investigated using 
+Structures of dataset were investigated. <br>
+**File needed:** Explore_Data.ipynb
 
 **Part 3: Data Reduction** <br>
 Original dataset is reduced to implementable dataset size, Figure 2. 
@@ -47,17 +47,34 @@ Two datasets were generated, and they both are denoted as a “Train Dataset”,
 
 In a similar fashion, another “Train Dataset” is un-randomly selected from the original dataset and it is 10% of the original amount of data. The un-random dataset was selected based on the first order of data in the given file. 
 
+**File needed:** generate_subset.ipynb
+
 **Part 4: Unsupervised Machine Learning Model** <br> 
 Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types to this plot. 
 The unsupervised model file name: “HierarchicalUnsupervised30Subset_20211028.ipynb” 
 
-**Part 5: Supervised Machine Learning Model** <br> 
-Two sets of cell numbers were explored, 43 and 12 cells, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. 
-Additional supervised model was developed based on given dataset that its dimension has been reduced using a PCA method. 
+**File needed:**   <br>
 
+UMAP_plots_predicted_data.ipynb        <br>
+Unsupervised_ML.ipynb                  <br>
+
+**Part 5: Supervised Machine Learning Model** <br> 
+Two sets of cell numbers were explored, 43 and 12 cells, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. <br>
+Additional supervised model was developed based on given dataset that its dimension has been reduced using a PCA method.  <br>
+
+**Files needed:**  <br>
+ML_model_12classes_unbalanced.ipynb    <br>
+ML_model_12classes_balanced.ipynb      <br>
+ML_model_43classes_unbalanced.ipynb    <br>
+ML_model_43classes_balanced.ipynb      <br>
+ML_pca_12classes.ipynb                 <br>
+ML_pca_43classes.ipynb                 <br>
+ML_pca_overview.ipynb                  <br>
 
 **Part 6: Model Interpretation** <br> 
-Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model. 
+Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model.  <br>
+**Files needed:**  <br>
+model_interpretation_per_classes.ipynb <br>
 
 ## 4.	Results <br>
 For 12 classes, 96% prediction accuracy of cells were predicted and the prediction under a Macro F1 method shows 74%. 
@@ -67,19 +84,19 @@ The model can be simplified by reduction of features. Only the most significant 
 
 ## Note: Lists of Files <br>
 
-convert_rds_to_h5Seurat.R
-Explore_Data.ipynb
-generate_subset.ipynb
-ML_model_12classes_unbalanced.ipynb
-ML_model_12classes_balanced.ipynb
-ML_model_43classes_unbalanced.ipynb
-ML_model_43classes_balanced.ipynb
-ML_pca_12classes.ipynb
-ML_pca_43classes.ipynb
-ML_pca_overview.ipynb
-model_interpretation_per_classes.ipynb
-UMAP_plots_predicted_data.ipynb
-Unsupervised_ML.ipynb
+convert_rds_to_h5Seurat.R              <br>
+Explore_Data.ipynb                     <br>
+generate_subset.ipynb                  <br>
+ML_model_12classes_unbalanced.ipynb    <br>
+ML_model_12classes_balanced.ipynb      <br>
+ML_model_43classes_unbalanced.ipynb    <br>
+ML_model_43classes_balanced.ipynb      <br>
+ML_pca_12classes.ipynb                 <br>
+ML_pca_43classes.ipynb                 <br>
+ML_pca_overview.ipynb                  <br>
+model_interpretation_per_classes.ipynb <br>
+UMAP_plots_predicted_data.ipynb        <br>
+Unsupervised_ML.ipynb                  <br>
 
 
 
