@@ -21,7 +21,7 @@ All icons used in this report are from [flaticon](https://www.flaticon.com/)
 
 ## 3.	Methodology 
 
-**Part 1:** Data Conversion 
+**Part 1: Data Conversion** <br>   
 RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
 
 **Part 2:** Data Exploration 
