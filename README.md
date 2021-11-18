@@ -7,7 +7,7 @@ When there are tumour cells, immune cells infiltrate into the tumour to kill tum
 To develop a tool to classify cells inside the tumours by using the single-cell reference Atlas to create a cell type classifier. This tool can then automatically assign cell labels to new single-cell studies. 
 
  <p align="center">
-<img width="609" alt="CellClassification2" src="https://user-images.githubusercontent.com/89971977/142506361-d1f6745d-5d5f-48b2-b389-82ffef03e6f4.PNG">
+<img width="610" alt="CellClassification2" src="https://user-images.githubusercontent.com/89971977/142506633-8d75c533-2626-4aaf-b591-e5badd5889df.PNG">
  </p>
 
  
