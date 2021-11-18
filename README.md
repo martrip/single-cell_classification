@@ -18,14 +18,14 @@ Figure 1Cell Classification
 All icons used in this report are from [flaticon](https://www.flaticon.com/) 
 
 ## 2.	Features Descriptions 
-•	3,000 genes 
-
+•	3,000 genes <br>
 •	43 cell types (108k cells). 43 cell types are the maximum number of cells. 
 
 ## 3.	Methodology 
 
 **Part 1: Data Conversion** <br>   
-RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
+RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python. <br>
+**File needed:** convert_rds_to_h5Seurat.R
 
 **Part 2: Data Exploration** <br>
 Structures of dataset were investigated using 
@@ -64,6 +64,22 @@ For 12 classes, 96% prediction accuracy of cells were predicted and the predicti
 
 ## 5.	Outlook <br>
 The model can be simplified by reduction of features. Only the most significant genes, based on the “Feature Importance”, output described earlier can be pre-selected and remain in the model. Those genes with less significant features can be excluded from the model. 
+
+## Note: Lists of Files <br>
+
+convert_rds_to_h5Seurat.R
+Explore_Data.ipynb
+generate_subset.ipynb
+ML_model_12classes_unbalanced.ipynb
+ML_model_12classes_balanced.ipynb
+ML_model_43classes_unbalanced.ipynb
+ML_model_43classes_balanced.ipynb
+ML_pca_12classes.ipynb
+ML_pca_43classes.ipynb
+ML_pca_overview.ipynb
+model_interpretation_per_classes.ipynb
+UMAP_plots_predicted_data.ipynb
+Unsupervised_ML.ipynb
 
 
 
