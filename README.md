@@ -14,11 +14,11 @@ Figure 1 Cell Classification
 
 All icons used in this report are from Free Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com) 
 
-2.	Features Descriptions 
+## 2.	Features Descriptions 
 •	3,000 genes 
 •	43 cell types (108k cells). 43 cell types are the maximum number of cells. 
 
-3.	Methodology 
+## 3.	Methodology 
 
 Part 1: Data Conversion 
 RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
@@ -50,10 +50,10 @@ Additional supervised model was developed based on given dataset that its dimens
 Part 6:  Model Interpretation 
 Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model. 
 
-4.	Results 
+## 4.	Results 
 For 12 classes, 96% prediction accuracy of cells were predicted and the prediction under a Macro F1 method shows 74%. 
 
-5.	Outlook 
+## 5.	Outlook 
 The model can be simplified by reduction of features. Only the most significant genes, based on the “Feature Importance”, output described earlier can be pre-selected and remain in the model. Those genes with less significant features can be excluded from the model. 
 
 
