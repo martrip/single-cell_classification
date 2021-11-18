@@ -18,6 +18,7 @@ All icons used in this report are from Free Vector Icons and Stickers - PNG, SVG
 •	43 cell types (108k cells). 43 cell types are the maximum number of cells. 
 
 3.	Methodology 
+
 Part 1: Data Conversion 
 RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
 
