@@ -33,8 +33,10 @@ Structures of dataset were investigated using
 Original dataset is reduced to implementable dataset size, Figure 2. 
 Original dataset is reduced to 30% in a random fashion, is denoted as “Test Dataset”. It can be observed that the dataset is unbalanced. This means the amount of cell types are unbalanced in the original dataset. This dataset is used in the unsupervised learning model to generate clusters. This same dataset is used in the Supervised learning model as a Test Dataset (unseen dataset). 
 
+ <p align="center">
 <img width="599" alt="DataFlow" src="https://user-images.githubusercontent.com/89971977/142503742-c2ead5cf-989b-44c3-8ff1-726340fdc765.PNG">
- 
+ </p>
+  
 <p align="center">
 Figure 2 Data Reduction
 </p>
