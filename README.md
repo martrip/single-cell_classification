@@ -12,7 +12,7 @@ To develop a tool to classify cells inside the tumours by using the single-cell 
 Figure 1 Cell Classification
 
 
-All icons used in this report are from Free Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com) 
+All icons used in this report are from [flaticon](https://www.flaticon.com/) 
 
 ## 2.	Features Descriptions 
 •	3,000 genes 
