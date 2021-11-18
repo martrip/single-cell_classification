@@ -18,7 +18,7 @@ All icons used in this report are from [flaticon](https://www.flaticon.com/)
 
 ## 2.	Features Descriptions 
 •	3,000 genes <br>
-•	43 cell types (108k cells). 43 cell types are the maximum number of cells. 
+•	43 cell types (108,000 cells). 43 cell types are the maximum number of cells. 
 
 ## 3.	Methodology 
 
