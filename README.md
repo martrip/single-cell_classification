@@ -10,7 +10,7 @@ To develop a tool to classify cells inside the tumours by using the single-cell 
 <img width="766" alt="CellClassification" src="https://user-images.githubusercontent.com/89971977/142504350-07cd9bf1-f2e5-4f0f-8e77-94c68c91a4d2.PNG">
  
 <p align="center">
-// **Figure 1** Cell Classification
+Figure 1Cell Classification
 </p>
 
 All icons used in this report are from [flaticon](https://www.flaticon.com/) 
@@ -34,7 +34,10 @@ Original dataset is reduced to 30% in a random fashion, is denoted as “Test Da
 
 <img width="599" alt="DataFlow" src="https://user-images.githubusercontent.com/89971977/142503742-c2ead5cf-989b-44c3-8ff1-726340fdc765.PNG">
  
-**Figure 2** Data Reduction
+<p align="center">
+Figure 2 Data Reduction
+</p>
+
 
 Two datasets were generated, and they both are denoted as a “Train Dataset”, and these will be used as a training dataset for the supervised models. Ten percent of the original dataset is randomly selected, and this is unbalanced data. This “Train Dataset” is split into 80% and 20%, train and test dataset to train the supervised model, respectively.
 
