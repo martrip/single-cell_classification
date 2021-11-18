@@ -3,7 +3,7 @@ single-cell_classification
 
 ## 1.	Background and Task 
 
-When there are tumour cells, immune cells infiltrate into the tumour to kill tumour cells. In order to investigate drug performances to cure cancers, it is necessary to develop a tool to classify immune cells inside tumours before and after the patients get their treatments. This tool can compare which cells still exist inside the tumours and which ones have disappeared due to the treatment, Figure 1. 
+When there are tumour cells, immune cells infiltrate into the tumour to kill tumour cells. In order to investigate drug performances to cure cancers, it is necessary to develop a tool to classify immune cells inside tumours before and after the patients get their treatments. This tool can compare which cells still exist inside the tumours and which ones have disappeared due to the treatment, Figure 1. <br> 
 To develop a tool to classify cells inside the tumours by using the single-cell reference Atlas to create a cell type classifier. This tool can then automatically assign cell labels to new single-cell studies. 
 
  <p align="center">
@@ -31,7 +31,7 @@ Structures of dataset were investigated. <br>
 **File needed:** Explore_Data.ipynb
 
 **Part 3: Data Reduction** <br>
-Original dataset is reduced to implementable dataset size, Figure 2. 
+Original dataset is reduced to implementable dataset size, Figure 2. <br>
 Original dataset is reduced to 30% in a random fashion, is denoted as “Test Dataset”. It can be observed that the dataset is unbalanced. This means the amount of cell types are unbalanced in the original dataset. This dataset is used in the unsupervised learning model to generate clusters. This same dataset is used in the Supervised learning model as a Test Dataset (unseen dataset). 
 
  <p align="center">
@@ -43,7 +43,7 @@ Figure 2 Data Reduction
 </p>
 
 
-Two datasets were generated, and they both are denoted as a “Train Dataset”, and these will be used as a training dataset for the supervised models. Ten percent of the original dataset is randomly selected, and this is unbalanced data. This “Train Dataset” is split into 80% and 20%, train and test dataset to train the supervised model, respectively.
+Two datasets were generated, and they both are denoted as a “Train Dataset”, and these will be used as a training dataset for the supervised models. Ten percent of the original dataset is randomly selected, and this is unbalanced data. This “Train Dataset” is split into 80% and 20%, train and test dataset to train the supervised model, respectively. <br>
 
 In a similar fashion, another “Train Dataset” is un-randomly selected from the original dataset and it is 10% of the original amount of data. The un-random dataset was selected based on the first order of data in the given file. 
 
@@ -51,7 +51,7 @@ In a similar fashion, another “Train Dataset” is un-randomly selected from t
 
 **Part 4: Unsupervised Machine Learning Model** <br> 
 Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types to this plot. 
-The unsupervised model file name: “HierarchicalUnsupervised30Subset_20211028.ipynb” 
+
 
 **File needed:**   <br>
 
@@ -73,6 +73,7 @@ ML_pca_overview.ipynb                  <br>
 
 **Part 6: Model Interpretation** <br> 
 Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model.  <br>
+
 **Files needed:**  <br>
 model_interpretation_per_classes.ipynb <br>
 
