@@ -47,13 +47,15 @@ Two datasets were generated, and they both are denoted as a “Train Dataset”,
 
 In a similar fashion, another “Train Dataset” is un-randomly selected from the original dataset and it is 10% of the original amount of data. The un-random dataset was selected based on the first order of data in the given file. 
 
-**File needed:** generate_subset.ipynb
+**File needed:** <br>
+
+generate_subset.ipynb
 
 **Part 4: Unsupervised Machine Learning Model** <br> 
 Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types to this plot. 
 
 
-**File needed:**   <br>
+**Files needed:**   <br>
 
 UMAP_plots_predicted_data.ipynb        <br>
 Unsupervised_ML.ipynb                  <br>
@@ -74,7 +76,7 @@ ML_pca_overview.ipynb                  <br>
 **Part 6: Model Interpretation** <br> 
 Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model.  <br>
 
-**Files needed:**  <br>
+**File needed:**  <br>
 model_interpretation_per_classes.ipynb <br>
 
 ## 4.	Results <br>
