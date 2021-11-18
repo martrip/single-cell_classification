@@ -1,7 +1,60 @@
 single-cell_classification
 ==============================
 
-A short description of the project.
+1.	Background and Task 
+When there are tumour cells, immune cells infiltrate into the tumour to kill tumour cells. In order to investigate drug performances to cure cancers, it is necessary to develop a tool to classify immune cells inside tumours before and after the patients get their treatments. This tool can compare which cells still exist inside the tumours and which ones have disappeared due to the treatment, Figure 1. 
+To develop a tool to classify cells inside the tumours by using the single-cell reference Atlas to create a cell type classifier. This tool can then automatically assign cell labels to new single-cell studies. 
+
+ 
+ 
+ 
+Figure 1 Cell Classification
+
+
+All icons used in this report are from Free Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS (flaticon.com) 
+
+2.	Features Descriptions 
+•	3,000 genes 
+•	43 cell types (108k cells). 43 cell types are the maximum number of cells. 
+
+3.	Methodology 
+Part 1: Data Conversion 
+RDS data (Adata format) is transformed to h5ad data format so that it can be transformed to csv file by Python.
+
+Part 2: Data Exploration 
+Structures of dataset were investigated using 
+
+Part 3: Data Reduction 
+Original dataset is reduced to implementable dataset size, Figure 2. 
+Original dataset is reduced to 30% in a random fashion, is denoted as “Test Dataset”. It can be observed that the dataset is unbalanced. This means the amount of cell types are unbalanced in the original dataset. This dataset is used in the unsupervised learning model to generate clusters. This same dataset is used in the Supervised learning model as a Test Dataset (unseen dataset). 
+
+
+ 
+Figure 2 Data Reduction
+
+Two datasets were generated, and they both are denoted as a “Train Dataset”, and these will be used as a training dataset for the supervised models. Ten percent of the original dataset is randomly selected, and this is unbalanced data. This “Train Dataset” is split into 80% and 20%, train and test dataset to train the supervised model, respectively.
+
+In a similar fashion, another “Train Dataset” is un-randomly selected from the original dataset and it is 10% of the original amount of data. The un-random dataset was selected based on the first order of data in the given file. 
+
+Part 4:  Unsupervised Machine Learning Model 
+Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types to this plot. 
+The unsupervised model file name: “HierarchicalUnsupervised30Subset_20211028.ipynb” 
+
+Part 5:  Supervised Machine Learning Model 
+Two sets of cell numbers were explored, 43 and 12 cells, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. 
+Additional supervised model was developed based on given dataset that its dimension has been reduced using a PCA method. 
+
+
+Part 6:  Model Interpretation 
+Gene expressions for each cell were generated and is known as “Feature Importance”. This feature importance was assigned to 12 Classes (12 cell types). The 12 Classes were predicted based on unbalanced dataset from a supervised learning model. 
+
+4.	Results 
+For 12 classes, 96% prediction accuracy of cells were predicted and the prediction under a Macro F1 method shows 74%. 
+
+5.	Outlook 
+The model can be simplified by reduction of features. Only the most significant genes, based on the “Feature Importance”, output described earlier can be pre-selected and remain in the model. Those genes with less significant features can be excluded from the model. 
+
+
 
 Project Organization
 ------------
