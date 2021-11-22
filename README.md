@@ -55,7 +55,7 @@ Since the test dataset will later be used to test the supervised models, it was 
 generate_subset.ipynb
 
 ### Part 4: Unsupervised Machine Learning Model <br> 
-Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems - see more info [Seurat - Guided Clustering Tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) . Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types in this plot. 
+Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (denoted as “cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems - see more info [Seurat - Guided Clustering Tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) . Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types in this plot. 
 
 <p align="center">
 <img width="400" alt="portfolio_view" src="./reports/figures/UMAP_12classes.png">
@@ -84,7 +84,7 @@ ML_pca_43classes.ipynb                 <br>
 
 ### Part 6: Model Interpretation <br> 
 
-In this part we only looked at the best performing model which used all 3,000 features. 
+In this part we only looked at the model that shows the best performance which used all 3,000 features. 
 It was a model that can predict 12 classes and was trained on unbalanced data.
 
 The feature importance of each cell type was extracted from the model and the 20 most influential features were plotted.
