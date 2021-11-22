@@ -42,7 +42,7 @@ The original dataset is reduced to implementable dataset sizes, Figure 2. <br>
 To achieve this a specific number of cells were selected from each cell type. Those least number of cells than others, all cell amount where taken into this train dataset. This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 
  <p align="center">
-<img width="644" alt="DataFlowWithFilesNames" src="https://user-images.githubusercontent.com/89971977/142843751-3d49d814-5fcf-4a80-a293-fdfd6f1b6bdd.PNG">
+<img width="636" alt="DataFlowWithFilesNames" src="https://user-images.githubusercontent.com/89971977/142844614-9b509c4d-67af-4a22-81c2-cc0abbafc891.PNG">
  </p>
   
 <p align="center">
