@@ -36,9 +36,9 @@ Explore_Data.ipynb
 
 ### Part 3: Data Reduction <br>
 The original dataset is reduced to implementable dataset sizes, Figure 2. <br>
-- Test Dataset: Original dataset reduced to 30% in a **random** fashion. Like the original, the test dataset set is unbalanced. This means that some cell types occur more frequently than others.This dataset is used in the unsupervised learning model to generate clusters and in the Supervised learning model as a Test Dataset (unseen dataset). 
-- Train Dataset Unbalanced: Original dataset reduced to 10% in a **random** fashion. Like the original, this train dataset set is unbalanced. This dataset will be used for supervised machine learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
-- Train Dataset Balanced: Original dataset reduced to 10% in a **nonrandom** fashion in order to make the dataset more balanced. 
+- **Test Dataset:** Original dataset reduced to 30% in a **random** fashion. Like the original, the test dataset set is unbalanced. This means that some cell types occur more frequently than others.This dataset is used in the unsupervised learning model to generate clusters and in the Supervised learning model as a Test Dataset (unseen dataset). 
+- **Train Dataset Unbalanced:** Original dataset reduced to 10% in a **random** fashion. Like the original, this train dataset set is unbalanced. This dataset will be used for supervised machine learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
+- **Train Dataset Balanced:** Original dataset reduced to 10% in a **nonrandom** fashion in order to make the dataset more balanced. 
 To achieve this a specific number of cells were selected from each cell type. From those cell types that had less than that number all cells were taken.
 This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 
