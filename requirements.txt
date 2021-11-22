@@ -1,6 +1,132 @@
 # local package
 -e .
 
+** Explore_Data.ipynb **
+pip install scanpy
+import scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+** ML_model_12classes_balanced.ipynb **
+
+!pip install pycaret
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pycaret
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from imblearn.over_sampling import SMOTEN
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+** ML_model_12classes_unbalanced.ipynb **
+!pip install scanpy
+!pip install pycaret
+from pycaret.utils import version
+import scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+** ML_model_43classes_balanced.ipynb **
+!pip install pycaret
+pip install -U imbalanced-learn
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pycaret
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+from imblearn.over_sampling import SMOTEN
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+
+** L_model_43classes_unbalanced.ipynb **
+!pip install scanpy
+!pip install pycaret
+from pycaret.utils import version
+import scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+import joblib
+
+
+** ML_model_overview_12classes_unbalanced.ipynb **
+!pip install scanpy
+!pip install pycaret
+from pycaret.utils import version
+import scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from pycaret.classification import *
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+import joblib
+
+
+
 # external requirements
 click
 Sphinx
