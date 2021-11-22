@@ -39,8 +39,7 @@ The original dataset is reduced to implementable dataset sizes, Figure 2. <br>
 - **Test Dataset:** Original dataset reduced to 30% in a **random** fashion. Like the original, the test dataset set is unbalanced. This means that some cell types occur more frequently than others.This dataset is used in the unsupervised learning model to generate clusters and in the Supervised learning model as a Test Dataset (unseen dataset). 
 - **Train Dataset Unbalanced:** Original dataset reduced to 10% in a **random** fashion. Like the original, this train dataset set is unbalanced. This dataset will be used for supervised machine learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 - **Train Dataset Balanced:** Original dataset reduced to 10% in a **nonrandom** fashion in order to make the dataset more balanced. 
-To achieve this a specific number of cells were selected from each cell type. From those cell types that had less than that number all cells were taken.
-This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
+To achieve this a specific number of cells were selected from each cell type. Those least number of cells than others, all cell amount where taken into this train dataset. This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 
  <p align="center">
 <img width="599" alt="DataFlow" src="https://user-images.githubusercontent.com/89971977/142503742-c2ead5cf-989b-44c3-8ff1-726340fdc765.PNG">
