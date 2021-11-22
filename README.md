@@ -59,7 +59,7 @@ Hierarchical unsupervised machine learning model is developed to classify cells 
 
 <p align="center">
 <img width="400" alt="portfolio_view" src="./reports/figures/UMAP_12classes.png">
-</p>
+</p> 
  
 <p align="center">
 Figure 3 UMAP
