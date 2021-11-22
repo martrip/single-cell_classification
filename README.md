@@ -115,6 +115,8 @@ By excluding some features the model can be simplified and may provide a better 
 The most significant genes, based on “Feature Importance” (output described earlier) can be selected and used to train the model. 
 Genes with less significant features will be excluded. 
 
+In addition, Hyperparameters could also be included in the models to increase the model performance. 
+
 ## Note: Lists of Files <br>
 
 convert_rds_to_h5Seurat.R              <br>
