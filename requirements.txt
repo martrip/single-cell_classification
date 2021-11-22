@@ -151,6 +151,67 @@ import seaborn as sns
 import pycaret
 from pycaret.classification import *
 
+** Unsupervised_ML.ipynb **
+pip install umap-learn
+# ----------------------------------GENERAL---------------------------------
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import rcParams  
+import seaborn as sns
+# ----------------------------------OTHER-----------------------------------
+import warnings
+warnings.filterwarnings("ignore")
+# ----------------------------------VISUALIZATION---------------------------
+from plotly import graph_objs as go
+plt.rcParams["figure.figsize"] = (12, 8)
+
+import matplotlib as mpl
+from matplotlib import cm
+#from colorspacious import cspace_converter
+from collections import OrderedDict
+from matplotlib.colors import ListedColormap, LinearSegmentedColormap
+
+# ----------------------------------PRE-PROCESSING---------------------------
+
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.metrics import silhouette_samples, silhouette_score
+
+# ----------------------------------PIPELINE AND MODELS----------------------
+
+from sklearn.pipeline import Pipeline
+from sklearn.cluster import KMeans
+from sklearn.manifold import TSNE  
+import umap
+from sklearn.decomposition import PCA
+
+import colorcet as cc
+from google.colab import drive
+
+
+** generate_subset.ipynb **
+from google.colab import drive
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+** model_interpretation_per_classes.ipynb **
+from google.colab import drive
+!pip install pycaret
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pycaret
+import joblib
+
+
+
+
+
+
+
 
 
 
