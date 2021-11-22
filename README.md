@@ -22,6 +22,10 @@ All icons used in this report are from [flaticon](https://www.flaticon.com/)
 
 ## 3.	Methodology 
 
+In this project Python and R have been used.
+All python packages can be found in requirements.txt and installed with pip 
+By running the R script all necessary libraries will automatically be installed.
+
 ### Part 1: Data Conversion <br>   
 RDS data is converted to h5ad data (AnnData) format so that it can be used and transformed into a csv file by Python. <br>
 
