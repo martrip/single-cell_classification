@@ -42,11 +42,11 @@ The original dataset is reduced to implementable dataset sizes, Figure 2. <br>
 To achieve this a specific number of cells were selected from each cell type. Those least number of cells than others, all cell amount where taken into this train dataset. This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 
  <p align="center">
-<img width="599" alt="DataFlow" src="https://user-images.githubusercontent.com/89971977/142503742-c2ead5cf-989b-44c3-8ff1-726340fdc765.PNG">
+<img width="644" alt="DataFlowWithFilesNames" src="https://user-images.githubusercontent.com/89971977/142843751-3d49d814-5fcf-4a80-a293-fdfd6f1b6bdd.PNG">
  </p>
   
 <p align="center">
-Figure 2 Data Reduction
+Figure 2 Data Reduction with File Names
 </p>
 
 Since the test dataset will later be used to test the supervised models, it was necessary to ensure that all cells in the test dataset would not end up in the train datasets. To achieve this, we excluded the test dataset from the original before generating the train datasets from it.
@@ -69,7 +69,7 @@ Figure 3 UMAP
 Unsupervised_ML.ipynb                  <br>
 
 ### Part 5: Supervised Machine Learning Model <br> 
-Two sets of number of cell types were explored, 43 and 12 cell types, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. <br>
+Two sets of number of cell types were explored, 43 and 12 cell types, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. <br> 
 Additional supervised models were developed based on a given dataset, which dimension has been reduced using a PCA method. 
 In this case an overview of the performance of different machine learning algorithms was performed to figure out which one should be used.<br>
 
@@ -81,6 +81,9 @@ ML_model_43classes_balanced.ipynb      <br>
 ML_pca_overview.ipynb                  <br>
 ML_pca_12classes.ipynb                 <br>
 ML_pca_43classes.ipynb                 <br>
+
+See all files needed in each step in Figure 2.  <br>
+
 
 ### Part 6: Model Interpretation <br> 
 
