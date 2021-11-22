@@ -125,6 +125,35 @@ from sklearn.metrics import confusion_matrix
 from sklearn import metrics
 import joblib
 
+** ML_pca_12classes.ipynb **
+** ML_pca_43classes.ipynb **
+!pip install pycaret
+!pip install scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pycaret
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import cross_val_score
+import joblib
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn import metrics
+
+** ML_pca_overview.ipynb **
+!pip install pycaret
+!pip install scanpy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pycaret
+from pycaret.classification import *
+
+
+
+
 
 
 # external requirements
