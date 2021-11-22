@@ -55,7 +55,7 @@ Since the test dataset will later be used to test the supervised models, it was 
 generate_subset.ipynb
 
 ### Part 4: Unsupervised Machine Learning Model <br> 
-Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems (Seurat - Guided Clustering Tutorial (satijalab.org)). Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types in this plot. 
+Hierarchical unsupervised machine learning model is developed to classify cells based on cell types (“cell_type” in the dataset). The dataset dimension is reduced by using the Principal Component Analysis (PCA) to perform linear dimensional reduction then the Uniform Manifold Approximation and Projection (UMAP) is used to do a 2D plot for a scatter visualization. This method is widely performed in gene expression problems - see more info [Seurat - Guided Clustering Tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html) . Then the “Kmeans” clustering, together with “Predicted Classes” from the supervised model, is used to label cell types in this plot. 
 
 <p align="center">
 <img width="400" alt="portfolio_view" src="./reports/figures/UMAP_12classes.png">
