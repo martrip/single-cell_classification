@@ -23,7 +23,7 @@ All icons used in this report are from [flaticon](https://www.flaticon.com/)
 ## 3.	Methodology 
 
 ### Part 1: Data Conversion <br>   
-RDS data is converted to h5ad data (AnnData) format so that it can be used and transformed to csv file by Python. <br>
+RDS data is converted to h5ad data (AnnData) format so that it can be used and transformed into a csv file by Python. <br>
 
 **File needed:** <br>
 convert_rds_to_h5Seurat.R
@@ -36,10 +36,10 @@ Explore_Data.ipynb
 
 ### Part 3: Data Reduction <br>
 The original dataset is reduced to implementable dataset sizes, Figure 2. <br>
-- **Test Dataset:** Original dataset reduced to 30% in a **random** fashion. Like the original, the test dataset set is unbalanced. This means that some cell types occur more frequently than others.This dataset is used in the unsupervised learning model to generate clusters and in the Supervised learning model as a Test Dataset (unseen dataset). 
+- **Test Dataset:** Original dataset reduced to 30% in a **random** fashion. Like the original, the test dataset set is unbalanced. This means that some cell types occur more frequently than others. This dataset is used in the unsupervised learning model to generate clusters and in the Supervised learning model as a Test Dataset (unseen dataset). 
 - **Train Dataset Unbalanced:** Original dataset reduced to 10% in a **random** fashion. Like the original, this train dataset set is unbalanced. This dataset will be used for supervised machine learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 - **Train Dataset Balanced:** Original dataset reduced to 10% in a **nonrandom** fashion in order to make the dataset more balanced. 
-To achieve this a specific number of cells were selected from each cell type. Those least number of cells than others, all cell amount where taken into this train dataset. This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
+To achieve this a specific number of cells were selected from each cell type. Of the cell types that had a lower number of cells than the specific number, all data points were included in the training data set. This dataset will be used for supervised Machine Learning. The “Train Dataset” will be split into 80% and 20%, train and test dataset to train and evaluate the supervised models, respectively.
 
  <p align="center">
 <img width="636" alt="DataFlowWithFilesNames" src="https://user-images.githubusercontent.com/89971977/142844614-9b509c4d-67af-4a22-81c2-cc0abbafc891.PNG">
