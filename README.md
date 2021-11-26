@@ -76,17 +76,24 @@ Unsupervised_ML.ipynb                  <br>
 
 ### Part 5: Supervised Machine Learning Model <br> 
 Two sets of number of cell types were explored, 43 and 12 cell types, respectively. These are denoted as “12 Class” and “43 Classes” throughout the project. Each number of cells were explored using balanced and unbalanced dataset as described in Figure 2. <br> 
+In order to get the prediction of the 43 cell types two different methods were used:
+All 43 classes at once and hierarchical models.
+
 Additional supervised models were developed based on a given dataset, which dimension has been reduced using a PCA method. 
 In this case an overview of the performance of different machine learning algorithms was performed to figure out which one should be used.<br>
 
 **Files needed:**  <br>
-ML_model_12classes_unbalanced.ipynb    <br>
-ML_model_12classes_balanced.ipynb      <br>
-ML_model_43classes_unbalanced.ipynb    <br>
-ML_model_43classes_balanced.ipynb      <br>
-ML_pca_overview.ipynb                  <br>
-ML_pca_12classes.ipynb                 <br>
-ML_pca_43classes.ipynb                 <br>
+ML_model_12classes_unbalanced.ipynb          <br>
+ML_model_12classes_balanced.ipynb            <br>
+ML_model_43classes_unbalanced.ipynb          <br>
+ML_model_43classes_balanced.ipynb            <br>
+ML_hierarchical_models_balanced.ipynb        <br>
+predict_hierarchical_models_balanced.ipynb   <br>
+ML_hierarchical_models_unbalanced.ipynb      <br>
+predict_hierarchical_models_unbalanced.ipynb <br>
+ML_pca_overview.ipynb                        <br>
+ML_pca_12classes.ipynb                       <br>
+ML_pca_43classes.ipynb                       <br>
 
 See all files needed in each step in Figure 2.  <br>
 
@@ -126,19 +133,23 @@ In addition, Hyperparameters could also be included in the models to increase th
 
 ## Note: Lists of Files <br>
 
-convert_rds_to_h5Seurat.R              <br>
-Explore_Data.ipynb                     <br>
-generate_subset.ipynb                  <br>
-ML_model_12classes_unbalanced.ipynb    <br>
-ML_model_12classes_balanced.ipynb      <br>
-ML_model_43classes_unbalanced.ipynb    <br>
-ML_model_43classes_balanced.ipynb      <br>
-ML_pca_12classes.ipynb                 <br>
-ML_pca_43classes.ipynb                 <br>
-ML_pca_overview.ipynb                  <br>
-model_interpretation_per_classes.ipynb <br>
-UMAP_plots_predicted_data.ipynb        <br>
-Unsupervised_ML.ipynb                  <br>
+convert_rds_to_h5Seurat.R                    <br>
+Explore_Data.ipynb                           <br>
+generate_subset.ipynb                        <br>
+ML_model_12classes_unbalanced.ipynb          <br>
+ML_model_12classes_balanced.ipynb            <br>
+ML_model_43classes_unbalanced.ipynb          <br>
+ML_model_43classes_balanced.ipynb            <br>
+ML_hierarchical_models_balanced.ipynb        <br>
+predict_hierarchical_models_balanced.ipynb   <br>
+ML_hierarchical_models_unbalanced.ipynb      <br>
+predict_hierarchical_models_unbalanced.ipynb <br>
+ML_pca_12classes.ipynb                       <br>
+ML_pca_43classes.ipynb                       <br>
+ML_pca_overview.ipynb                        <br>
+model_interpretation_per_classes.ipynb       <br>
+UMAP_plots_predicted_data.ipynb              <br>
+Unsupervised_ML.ipynb                        <br>
 
 
 
